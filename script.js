@@ -16,3 +16,7 @@ console.log(duplicate(10));
 // agar vorooddi nadashte bashim paranteze khali mizarim
 // baraye func haye chand khati az {} esteffade mikonim va cod ra minevisim
 
+// map
+// const arr = [1, 2, 3];
+// const newArr = arr.map((item) => item * 2);
+// console.log(newArr)
