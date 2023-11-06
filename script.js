@@ -65,9 +65,13 @@
 // console.log(numbers2);
 
 // ternary operator:
-const number = 5;
+// const number = 5;
+// const result =
+// number > 10 ? "Number is greater than 10" : "Number is less than 10";
+// console.log(result)
 
-const result =
-number > 10 ? "Number is greater than 10" : "Number is less than 10";
+// async js - promis
 
-console.log(result)
+fetch("https://jsonplaceholder.typicode.com/todos")
+ .then((res) => res.json())
+ .then((json) => console.log(json));
