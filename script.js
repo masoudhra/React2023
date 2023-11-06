@@ -49,11 +49,17 @@
 // console.log(text);
 
 // destructuring
-const data = {
-    name: "Masoud", 
-    age: 33, 
-    address: {city: "wellington", street: "taranaki" },
-};
-const { name, age, address: {city, street} } = data;
+// const data = {
+//     name: "Masoud", 
+//     age: 33, 
+//     address: {city: "wellington", street: "taranaki" },
+// };
+// const { name, age, address: {city, street} } = data;
 
-console.log(street);
+// console.log(street);
+
+// spread operator:
+const numbers1 = [1, 2, 3, 4];
+const words = ["a", "b"]
+const numbers2 = [0, ... numbers1, ... words, 8];
+console.log(numbers2)
