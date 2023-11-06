@@ -42,9 +42,18 @@
 
 
 //template literals:
-const name = "Masoud";
-const age= 33;
+// const name = "Masoud";
+// const age= 33;
 
-const text = `Hi I am ${name} and I am ${age} years old`;
-console.log(text);
+// const text = `Hi I am ${name} and I am ${age} years old`;
+// console.log(text);
 
+// destructuring
+const data = {
+    name: "Masoud", 
+    age: 33, 
+    address: {city: "wellington", street: "taranaki" },
+};
+const { name, age, address: {city, street} } = data;
+
+console.log(street);
