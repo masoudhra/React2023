@@ -59,7 +59,15 @@
 // console.log(street);
 
 // spread operator:
-const numbers1 = [1, 2, 3, 4];
-const words = ["a", "b"]
-const numbers2 = [0, ... numbers1, ... words, 8];
-console.log(numbers2)
+// const numbers1 = [1, 2, 3, 4];
+// const words = ["a", "b"]
+// const numbers2 = [0, ... numbers1, ... words, 8];
+// console.log(numbers2);
+
+// ternary operator:
+const number = 5;
+
+const result =
+number > 10 ? "Number is greater than 10" : "Number is less than 10";
+
+console.log(result)
