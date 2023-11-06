@@ -72,6 +72,23 @@
 
 // async js - promis
 
-fetch("https://jsonplaceholder.typicode.com/todos")
- .then((res) => res.json())
- .then((json) => console.log(json));
+// fetch("https://jsonplaceholder.typicode.com/todos")
+//  .then((res) => res.json())
+//  .then((json) => console.log(json));
+
+// asunc/await
+async function getData() {
+    const res = await fetch("https://jsonplaceholder.typicode.com/todos");
+    const json = await res.json();
+    console.log(json)
+}
+
+getData()
+
+const gettData = async () => {
+    const res = await fetch("https://jsonplaceholder.typicode.com/todos");
+    const json = await res.json();
+    console.log(json)
+}
+
+gettData()
