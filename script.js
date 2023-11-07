@@ -77,18 +77,25 @@
 //  .then((json) => console.log(json));
 
 // asunc/await
-async function getData() {
-    const res = await fetch("https://jsonplaceholder.typicode.com/todos");
-    const json = await res.json();
-    console.log(json)
-}
+// async function getData() {
+//     const res = await fetch("https://jsonplaceholder.typicode.com/todos");
+//     const json = await res.json();
+//     console.log(json)
+// }
 
-getData()
+// getData()
 
-const gettData = async () => {
-    const res = await fetch("https://jsonplaceholder.typicode.com/todos");
-    const json = await res.json();
-    console.log(json)
-}
+// const gettData = async () => {
+//     const res = await fetch("https://jsonplaceholder.typicode.com/todos");
+//     const json = await res.json();
+//     console.log(json)
+// }
 
-gettData()
+// gettData()
+
+// export - import
+import mainFunction from "./functions";
+import { dublicate, name } from "./functions";
+console.log(name);
+console.log(dublicate(2));
+mainFunction()
